@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canada Visa Apply — Work Permit & Immigration Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #c81e2b;
+      --red-dark: #99121d;
+      --red-soft: #fff5f5;
+      --navy: #1e2d3d;
+      --blue-bar: #2368a2;
+      --dark: #111827;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --bg: #f3f5f8;
+      --card: #ffffff;
+      --border: #dde2ea;
+      --radius: 16px;
+      --shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+      --shadow-lg: 0 22px 50px rgba(15, 23, 42, 0.16);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+
+    .nav-container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 13px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .brand-title { font-weight: 800; font-size: 19px; color: var(--red); line-height: 1; }
+    .brand-sub { font-size: 10px; font-weight: 700; letter-spacing: 2.2px; color: var(--dark); margin-top: 3px; }
+
+    .nav-links {
+      display: none;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .nav-links a:hover { color: var(--red); }
+
+    .menu-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 10px;
+      color: var(--dark);
+      display: grid;
+      place-items: center;
+    }
+
+    .mobile-drawer {
+      display: none;
+      flex-direction: column;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 12px 18px;
+      gap: 10px;
+    }
+    .mobile-drawer.open { display: flex; }
+    .mobile-drawer a { text-decoration: none; color: var(--text); font-weight: 600; padding: 6px 0; }
+
+    /* Hero Banner */
+    .red-hero {
+      background: linear-gradient(180deg, #d62828 0%, #b81d24 100%);
+      color: #ffffff;
+      padding: 32px 20px 46px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .red-hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .top-banner-photo {
+      width: 100%;
+      max-width: 680px;
+      height: 205px;
+      margin: 0 auto 20px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.28);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+      background: #7f1d1d;
+    }
+
+    .top-banner-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .red-hero-title {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.18;
+      margin-bottom: 16px;
+      letter-spacing: -0.4px;
+    }
+
+    .red-hero-sub {
+      font-size: 15.5px;
+      color: rgba(255, 255, 255, 0.94);
+      max-width: 540px;
+      margin: 0 auto 26px;
+    }
+
+    .work-visa-underline {
+      font-weight: 800;
+      text-decoration: underline;
+      text-decoration-color: #facc15;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 3px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 390px;
+      margin: 0 auto 22px;
+    }
+
+    .hero-btn-white {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      border-radius: 12px;
+      background: #ffffff;
+      color: var(--red-dark);
+      font-weight: 800;
+      font-size: 15px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+    }
+    .hero-btn-white:hover { background: #f8fafc; }
+
+    .hero-btn-outline {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14.5px;
+      text-decoration: none;
+      border: 1.5px solid rgba(255, 255, 255, 0.55);
+      cursor: pointer;
+    }
+    .hero-btn-outline:hover { background: rgba(255, 255, 255, 0.18); }
+
+    .hero-hours {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 24px 16px 80px;
+    }
+
+    /* Lovely Welcome & Canada Visa Intro Box Right Below Red Hero */
+    .below-hero-welcome {
+      max-width: 780px;
+      margin: 0 auto 26px;
+      background: linear-gradient(135deg, #ffffff 0%, #fff8f8 100%);
+      border: 1px solid #fecdd3;
+      border-left: 5px solid var(--red);
+      border-radius: 18px;
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .welcome-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      color: var(--red);
+      margin-bottom: 6px;
+    }
+
+    .welcome-heading {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+      line-height: 1.28;
+    }
+
+    .welcome-copy {
+      font-size: 14.2px;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .welcome-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .welcome-chip {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      color: var(--dark);
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    /* Visual "How It Works." Section Above Jobs */
+    .visual-hiw-section {
+      max-width: 780px;
+      margin: 0 auto 30px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .visual-hiw-heading {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 22px;
+      letter-spacing: -0.4px;
+    }
+
+    .visual-step-block {
+      max-width: 440px;
+      margin: 0 auto 28px;
+    }
+    .visual-step-block:last-child { margin-bottom: 6px; }
+
+    .visual-mockup-card {
+      background: linear-gradient(180deg, #fdf2f4 0%, #f9e4e8 100%);
+      border-radius: 18px;
+      padding: 22px 18px;
+      margin-bottom: 16px;
+      box-shadow: inset 0 0 0 1px rgba(200, 30, 43, 0.08);
+    }
+
+    .mock-form-paper {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+    .mock-field-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    .mock-field-bar {
+      height: 26px;
+      background: #f3f4f6;
+      border-radius: 7px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      padding: 0 9px;
+      color: #9ca3af;
+      font-size: 12px;
+    }
+    .mock-field-bar:last-child { margin-bottom: 0; }
+
+    .mock-id-card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+    .mock-id-top {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .mock-id-photo {
+      width: 68px;
+      height: 82px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid #e5e7eb;
+    }
+    .mock-lines { flex: 1; }
+    .mock-line {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .mock-line.short { width: 65%; }
+
+    .mock-verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid #bbf7d0;
+      color: #15803d;
+      font-weight: 700;
+      font-size: 12.5px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      margin-top: 12px;
+      box-shadow: 0 6px 16px rgba(21, 128, 61, 0.12);
+    }
+
+    .mock-report-paper {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+      text-align: center;
+    }
+    .mock-report-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 800;
+      font-size: 14px;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .mock-clear-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 12px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #15803d;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 999px;
+    }
+
+    .visual-step-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .visual-step-badge {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--red);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .visual-step-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+    .visual-step-desc {
+      font-size: 14.5px;
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .sample-report-link {
+      color: var(--red);
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 0;
+    }
+
+    /* Search */
+    .search-wrapper {
+      max-width: 680px;
+      margin: 0 auto 24px;
+      position: relative;
+    }
+    .search-icon {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+    }
+    .search-input {
+      width: 100%;
+      padding: 15px 18px 15px 48px;
+      font-size: 15px;
+      font-family: inherit;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      outline: none;
+    }
+    .search-input:focus { border-color: var(--red); }
+
+    /* Jobs Grid */
+    .jobs-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .job-card {
+      background: #fff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .job-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .job-media { position: relative; height: 220px; background: #1e293b; }
+    .job-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .salary-badge {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+      background: rgba(255, 255, 255, 0.96);
+      padding: 7px 14px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+    }
+    .salary-badge .dollar { color: #15803d; }
+    .salary-badge .period { font-size: 12px; font-weight: 500; color: var(--muted); }
+
+    .category-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 19px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .job-body { padding: 20px; }
+    .job-title { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+    .job-title.accent-red { color: var(--red); }
+    .job-desc { font-size: 14.5px; color: var(--muted); margin-bottom: 18px; }
+
+    .btn-primary {
+      width: 100%;
+      padding: 14px 18px;
+      border: none;
+      border-radius: 10px;
+      background: var(--red);
+      color: #fff;
+      font-family: inherit;
+      font-size: 15.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: var(--red-dark); }
+
+    .btn-secondary {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fff;
+      color: var(--dark);
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .btn-secondary:hover { background: #f8fafc; }
+
+    .btn-pdf {
+      width: 100%;
+      padding: 13px 16px;
+      border: none;
+      border-radius: 10px;
+      background: #0f766e;
+      color: #fff;
+      font-family: inherit;
+      font-size: 14.5px;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn-pdf:hover { background: #115e59; }
+
+    /* Trust & Career Guidance Focus Card */
+    .focus-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px 22px;
+      max-width: 780px;
+      margin: 48px auto 0;
+      box-shadow: var(--shadow);
+    }
+
+    .focus-badge {
+      display: inline-block;
+      background: var(--red-soft);
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .focus-heading {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.22;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .focus-heading span { color: var(--red); }
+
+    .focus-bar {
+      width: 64px;
+      height: 5px;
+      background: linear-gradient(90deg, var(--red), #f87171);
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .focus-text {
+      font-size: 14.5px;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .focus-text strong { color: var(--dark); }
+    .focus-text .red-link { color: var(--red); font-weight: 700; }
+
+    .trust-points {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 18px 0 22px;
+    }
+
+    .trust-point-box {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 15px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 14.5px;
+      color: var(--dark);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    .trust-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--red-soft);
+      color: var(--red);
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .iccrc-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .iccrc-logo-text {
+      font-size: 38px;
+      font-weight: 800;
+      color: #334155;
+      letter-spacing: -1.5px;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .iccrc-sub {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      color: #475569;
+      text-transform: uppercase;
+    }
+
+    /* Section Headings */
+    .section-header {
+      text-align: center;
+      max-width: 620px;
+      margin: 48px auto 24px;
+    }
+    .section-tag {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 1.6px;
+      color: var(--red);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .section-title {
+      font-size: 25px;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .section-desc { font-size: 14.5px; color: var(--muted); }
+
+    /* How It Works Steps */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .step-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    .step-num {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: var(--red-soft);
+      color: var(--red);
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      margin-bottom: 12px;
+      border: 1px solid #fecdd3;
+    }
+    .step-card h3 { font-size: 16px; font-weight: 800; margin-bottom: 6px; color: var(--dark); }
+    .step-card p { font-size: 13.5px; color: var(--muted); }
+
+    /* Testimonials */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .review-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .reviewer-info { display: flex; align-items: center; gap: 12px; }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--red-soft);
+      color: var(--red);
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      border: 1px solid #fecdd3;
+    }
+    .reviewer-name { font-weight: 800; font-size: 15px; color: var(--dark); }
+    .reviewer-role { font-size: 12px; color: var(--muted); }
+    .stars { color: #f59e0b; font-size: 14px; }
+    .review-text { font-size: 14px; color: var(--text); }
+
+    /* About Us */
+    .about-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 26px 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .about-item {
+      background: var(--bg);
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+    .about-item strong {
+      display: block;
+      color: var(--dark);
+      margin-bottom: 4px;
+      font-size: 15px;
+    }
+
+    /* FAQ Accordion */
+    .faq-list {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .faq-q {
+      width: 100%;
+      background: #fff;
+      border: none;
+      padding: 16px 18px;
+      text-align: left;
+      font-family: inherit;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-a {
+      display: none;
+      padding: 0 18px 16px;
+      font-size: 13.8px;
+      color: var(--muted);
+    }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .faq-plus { transform: rotate(45deg); }
+    .faq-plus { font-size: 20px; font-weight: 700; color: var(--red); transition: transform 0.2s; }
+
+    /* 2.5s Pro Loader Overlay */
+    .page-loader {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.84);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 999;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .page-loader.show { display: flex; }
+
+    .loader-ring-wrap {
+      position: relative;
+      width: 74px;
+      height: 74px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+    }
+
+    .loader-spinner {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 255, 255, 0.18);
+      border-top-color: #ff4757;
+      animation: spin360 0.85s linear infinite;
+    }
+
+    .loader-leaf {
+      font-size: 24px;
+      animation: pulseScale 1.25s ease-in-out infinite;
+    }
+
+    .loader-title {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      margin-bottom: 4px;
+    }
+
+    .loader-sub {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    @keyframes spin360 { to { transform: rotate(360deg); } }
+    @keyframes pulseScale {
+      0%, 100% { transform: scale(0.95); opacity: 0.85; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+
+    /* Flow Modal */
+    .flow-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 16px;
+      overflow-y: auto;
+      z-index: 300;
+    }
+    .flow-backdrop.open { display: flex; }
+
+    .flow-card {
+      background: #fff;
+      width: 100%;
+      max-width: 560px;
+      border-radius: 20px;
+      padding: 26px 22px;
+      margin: 14px auto;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      border: 1px solid var(--border);
+    }
+
+    .flow-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: none;
+      background: #f1f5f9;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .stepper {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      padding-right: 36px;
+    }
+    .step-pill {
+      flex: 1;
+      height: 6px;
+      border-radius: 999px;
+      background: #e2e8f0;
+    }
+    .step-pill.active { background: var(--red); }
+    .step-pill.done { background: #16a34a; }
+
+    .form-group { margin-bottom: 16px; }
+    .label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 7px;
+      flex-wrap: wrap;
+    }
+    .form-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .req { color: var(--red); }
+
+    .fee-pill {
+      background: #fee2e2;
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+
+    .input-field, .select-field, .textarea-field {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--text);
+      background: #fff;
+      outline: none;
+    }
+    .input-field:focus, .select-field:focus, .textarea-field:focus {
+      border-color: var(--red);
+    }
+
+    .upload-box {
+      border: 2px dashed #cbd5e1;
+      border-radius: 14px;
+      padding: 18px 14px;
+      text-align: center;
+      cursor: pointer;
+      background: #fafbfc;
+      transition: border-color 0.2s;
+    }
+    .upload-box:hover { border-color: var(--red); }
+
+    .captcha-box {
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .captcha-left { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 14px; }
+    .captcha-left input { width: 22px; height: 22px; accent-color: var(--red); cursor: pointer; }
+
+    .fee-page-title {
+      font-size: 27px;
+      font-weight: 800;
+      color: #1f2937;
+      padding-bottom: 8px;
+      border-bottom: 4px solid #b8333a;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .fee-widget {
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 14px;
+      background: #fff;
+    }
+
+    .fee-widget-header {
+      background: var(--blue-bar);
+      color: #fff;
+      padding: 13px 16px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .fee-widget-body { padding: 18px 16px; }
+
+    .btn-navy {
+      background: var(--navy);
+      color: #fff;
+      border: none;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+    }
+    .btn-navy:hover { background: #15202c; }
+
+    .tax-box {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .tax-box-title {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--navy);
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .tax-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+      padding: 6px 0;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .tax-line:last-child {
+      border-bottom: none;
+      padding-top: 10px;
+      margin-top: 4px;
+      border-top: 1.5px solid #cbd5e1;
+      font-size: 15.5px;
+      font-weight: 800;
+      color: var(--red);
+    }
+
+    .account-card {
+      border: 1.5px solid #86efac;
+      background: #f0fdf4;
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .acc-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px 0;
+      border-bottom: 1px solid #dcfce7;
+      font-size: 14px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .acc-row:last-child { border-bottom: none; }
+
+    .copy-btn {
+      background: #15803d;
+      color: #fff;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+
+    .proof-preview {
+      max-width: 100%;
+      max-height: 190px;
+      border-radius: 10px;
+      margin-top: 10px;
+      border: 1px solid #cbd5e1;
+      display: none;
+    }
+
+    .verify-box {
+      text-align: center;
+      padding: 26px 16px;
+      border-radius: 16px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+
+    .timer-circle {
+      width: 98px;
+      height: 98px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--red);
+      background: #fff5f5;
+      border: 4px solid var(--red);
+    }
+
+    .timer-circle.verified {
+      color: #15803d;
+      background: #f0fdf4;
+      border-color: #16a34a;
+      font-size: 36px;
+    }
+
+    .pdf-summary-box {
+      margin-top: 16px;
+      text-align: left;
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 12.5px;
+    }
+    .pdf-summary-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 5px 0;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .pdf-summary-row:last-child { border-bottom: none; }
+
+    footer {
+      text-align: center;
+      padding: 24px 16px 36px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      background: #fff;
+    }
+
+    @media (min-width: 640px) {
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 768px) {
+      .nav-links { display: flex; }
+      .menu-btn { display: none; }
+      .red-hero { padding: 36px 24px 56px; }
+      .top-banner-photo { height: 240px; }
+      .red-hero-title { font-size: 40px; }
+      .jobs-grid { max-width: 100%; grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { max-width: 100%; grid-template-columns: repeat(2, 1fr); }
+      .about-features { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .jobs-grid { grid-template-columns: repeat(3, 1fr); }
+      .steps-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 2.5-Second Page Transition Loader -->
+  <div class="page-loader" id="pageLoader" aria-live="polite">
+    <div class="loader-ring-wrap">
+      <div class="loader-spinner"></div>
+      <div class="loader-leaf">🍁</div>
+    </div>
+    <div class="loader-title" id="loaderTitle">Loading Next Page...</div>
+    <div class="loader-sub" id="loaderSub">Please wait a moment</div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none">
+          <path d="M12 1L14.3 6.4L19.5 4.8L17.6 10.2L22.5 11.4L18.2 15.1L19.8 19.6L13.5 18.2L12.8 23H11.2L10.5 18.2L4.2 19.6L5.8 15.1L1.5 11.4L6.4 10.2L4.5 4.8L9.7 6.4L12 1Z" fill="#c81e2b"/>
+        </svg>
+        <div>
+          <div class="brand-title">CANADA</div>
+          <div class="brand-sub">VISA APPLY</div>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#jobs">Available Jobs</a>
+        <a href="#focus-trust">Our Focus</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#reviews">Client Reviews</a>
+        <a href="#about">About Us</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <button class="menu-btn" onclick="document.getElementById('mobileDrawer').classList.toggle('open')" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" fill="none">
+          <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#jobs" onclick="this.parentElement.classList.remove('open')">Available Jobs</a>
+      <a href="#focus-trust" onclick="this.parentElement.classList.remove('open')">Our Focus</a>
+      <a href="#how-it-works" onclick="this.parentElement.classList.remove('open')">How It Works</a>
+      <a href="#reviews" onclick="this.parentElement.classList.remove('open')">Client Reviews</a>
+      <a href="#about" onclick="this.parentElement.classList.remove('open')">About Us</a>
+      <a href="#faq" onclick="this.parentElement.classList.remove('open')">FAQ</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="red-hero">
+    <div class="red-hero-inner">
+      <div class="top-banner-photo">
+        <img
+          src="https://i.postimg.cc/VkhYdPxZ/file-00000000ac908207847678c91ef8302b.png"
+          alt="Canada Visa & Career Banner"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80';"
+        />
+      </div>
+
+      <div class="trust-pill">★ Trusted by 1000+ Applicants</div>
+      <h1 class="red-hero-title">Your Dream Job in Canada Starts Here!</h1>
+      <p class="red-hero-sub">
+        Secure your <span class="work-visa-underline">Work Visa</span> with our expert guidance. Take the first step toward a brighter future today!
+      </p>
+
+      <div class="hero-cta-group">
+        <button type="button" class="hero-btn-white" onclick="openApplyFlow('Security Guard')">
+          🍁 Apply for Canada Visa Now
+        </button>
+        <a href="#jobs" class="hero-btn-outline">
+          💼 Explore Available Job Roles
+        </a>
+      </div>
+
+      <div class="hero-hours">
+        🕒 Online Application Portal Active 24/7 • Support Desk: Monday to Friday, 10 AM – 6:30 PM
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Lovely Welcome & Canada Visa Intro Right Below Red Hero -->
+    <section class="below-hero-welcome" aria-label="Welcome to Canada Visa Apply">
+      <div class="welcome-kicker">🍁 Welcome to Canada Visa Apply</div>
+      <h2 class="welcome-heading">A Clear, Friendly &amp; Reliable Path to Work Opportunities in Canada</h2>
+      <p class="welcome-copy">
+        Whether you are exploring skilled trades, logistics, hospitality, or everyday essential roles in Canada, our portal brings everything together in one clean place—clear monthly salaries, step-by-step guidance, transparent fee &amp; tax details, and a downloadable PDF record of your application.
+      </p>
+      <div class="welcome-highlights">
+        <span class="welcome-chip">✨ Easy Step-by-Step Filing</span>
+        <span class="welcome-chip">🍁 Genuine Canadian Job Roles</span>
+        <span class="welcome-chip">📄 Instant Detail PDF Record</span>
+      </div>
+    </section>
+
+    <!-- Visual "How It Works." Section Right Above Jobs -->
+    <section class="visual-hiw-section" aria-label="How It Works Steps">
+      <h2 class="visual-hiw-heading">How It Works.</h2>
+
+      <!-- Step 1 -->
+      <div class="visual-step-block">
+        <div class="visual-mockup-card">
+          <div class="mock-form-paper">
+            <div class="mock-field-label">First name</div>
+            <div class="mock-field-bar">Enter first name</div>
+            <div class="mock-field-label">Last name</div>
+            <div class="mock-field-bar">Enter last name</div>
+            <div class="mock-field-label">Address</div>
+            <div class="mock-field-bar">📍 Your current city &amp; country</div>
+          </div>
+        </div>
+        <div class="visual-step-title-row">
+          <span class="visual-step-badge">1</span>
+          <h3 class="visual-step-title">Submit a Short Form</h3>
+        </div>
+        <p class="visual-step-desc">
+          Enter your basic information, provide consent, and complete a short form securely—everything takes just a few minutes.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="visual-step-block">
+        <div class="visual-mockup-card">
+          <div class="mock-id-card">
+            <div class="mock-id-top">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=240&q=80"
+                alt="Applicant ID Portrait"
+                class="mock-id-photo"
+              />
+              <div class="mock-lines">
+                <div class="mock-line" style="width: 82%;"></div>
+                <div class="mock-line" style="width: 62%;"></div>
+                <div class="mock-line" style="width: 90%;"></div>
+                <div class="mock-line short"></div>
+              </div>
+            </div>
+            <div class="mock-verified-badge">
+              <span>✓</span>
+              <span>Identity Verified</span>
+            </div>
+          </div>
+        </div>
+        <div class="visual-step-title-row">
+          <span class="visual-step-badge">2</span>
+          <h3 class="visual-step-title">Verify Your Identity</h3>
+        </div>
+        <p class="visual-step-desc">
+          Take a quick selfie and upload your government-issued ID. Our system verifies your identity instantly and securely.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="visual-step-block">
+        <div class="visual-mockup-card">
+          <div class="mock-report-paper">
+            <div class="mock-report-brand">
+              <span style="color: var(--red);">🍁</span>
+              <span>Canada Visa Apply</span>
+            </div>
+            <div class="mock-line" style="width: 85%; margin: 0 auto 8px;"></div>
+            <div class="mock-line" style="width: 70%; margin: 0 auto 8px;"></div>
+            <div class="mock-clear-pill">
+              <span>✓</span>
+              <span>Result: Clear</span>
+            </div>
+          </div>
+        </div>
+        <div class="visual-step-title-row">
+          <span class="visual-step-badge">3</span>
+          <h3 class="visual-step-title">Receive Your Official Report</h3>
+        </div>
+        <p class="visual-step-desc">
+          Your report is typically ready in minutes and sent straight to your inbox as a secure PDF. View a
+          <button type="button" class="sample-report-link" onclick="openSampleReportPreview()">sample report</button>
+          to see what you'll receive.
+        </p>
+      </div>
+    </section>
+
+    <!-- Search Bar -->
+    <div class="search-wrapper" id="jobs">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="jobSearch" class="search-input" placeholder="Search for a visa or role..." />
+    </div>
+
+    <!-- Jobs Grid (Single Salary Value Per Card) -->
+    <section class="jobs-grid" id="jobsGrid"></section>
+
+    <!-- Trust & Career Guidance Focus Section -->
+    <section id="focus-trust" class="focus-card">
+      <div class="focus-badge">OUR FOCUS</div>
+      <h2 class="focus-heading">About Visa &amp; <span>Career</span><br/><span>Guidance</span></h2>
+      <div class="focus-bar"></div>
+
+      <p class="focus-text">
+        At <strong>Canada Visa Apply</strong>, we specialize in providing expert guidance for <span class="red-link">visa assessment</span> and <span class="red-link">citizenship applications</span>. Our dedicated team ensures a smooth and legally compliant process for individuals seeking opportunities in various essential sectors across Canada.
+      </p>
+
+      <p class="focus-text">
+        Whether you have experience in skilled trades, customer service, transportation, or other in-demand professions, we are here to assist you every step of the way. Our goal is to simplify the application process and help you navigate the path to a successful career in Canada.
+      </p>
+
+      <div class="trust-points">
+        <div class="trust-point-box">
+          <div class="trust-dot">🛡️</div>
+          <span>Legally Compliant Process</span>
+        </div>
+        <div class="trust-point-box">
+          <div class="trust-dot">🌐</div>
+          <span>Multiple Sectors Covered</span>
+        </div>
+        <div class="trust-point-box">
+          <div class="trust-dot">✓</div>
+          <span>1000+ Successful Applicants</span>
+        </div>
+      </div>
+
+      <div class="iccrc-box">
+        <div class="iccrc-logo-text">iccrc 🍁</div>
+        <div class="iccrc-sub">IMMIGRATION CONSULTANTS OF CANADA REGULATORY COUNCIL</div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+      <div class="section-header">
+        <div class="section-tag">Simple Process</div>
+        <h2 class="section-title">How Your Application Works</h2>
+        <p class="section-desc">Four clear stages designed for a smooth and transparent experience.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Select Job Role</h3>
+          <p>Browse available roles with monthly salary details and click Apply Now.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Fill Application</h3>
+          <p>Enter your contact details, location, role preference, and optional documents.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Fee, Tax &amp; Account</h3>
+          <p>Choose your country and payment method, review the tax box, and transfer to the official account.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Proof &amp; Verification</h3>
+          <p>Upload your payment proof photo from gallery, complete verification, and download your full PDF.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section id="reviews">
+      <div class="section-header">
+        <div class="section-tag">Applicant Feedback</div>
+        <h2 class="section-title">What Our Applicants Say</h2>
+        <p class="section-desc">Real experiences from candidates who used our Canada visa application portal.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-top">
+            <div class="reviewer-info">
+              <div class="avatar">RK</div>
+              <div>
+                <div class="reviewer-name">Rahul Kumar</div>
+                <div class="reviewer-role">Food Packing • India</div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Their service is very clear and well organized. Every step is easy to follow and the team provides proper guidance throughout."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-top">
+            <div class="reviewer-info">
+              <div class="avatar">GS</div>
+              <div>
+                <div class="reviewer-name">Gurpreet Singh</div>
+                <div class="reviewer-role">Driving • Punjab</div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Very professional and reliable application process. The fee summary and tax breakdown are completely transparent."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-top">
+            <div class="reviewer-info">
+              <div class="avatar">MA</div>
+              <div>
+                <div class="reviewer-name">Mohammad Arif</div>
+                <div class="reviewer-role">Security Guard • Assam</div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-text">"The entire workflow is smooth and modern. From submitting details to confirming payment proof, everything worked seamlessly."</p>
+        </article>
+
+        <article class="review-card">
+          <div class="review-top">
+            <div class="reviewer-info">
+              <div class="avatar">NK</div>
+              <div>
+                <div class="reviewer-name">Neha Kapoor</div>
+                <div class="reviewer-role">Accounting • Delhi</div>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <p class="review-text">"Very neat and reliable visa portal. Support team is responsive and guides properly at every stage."</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <div class="section-header">
+        <div class="section-tag">About Us</div>
+        <h2 class="section-title">About Canada Visa Apply</h2>
+      </div>
+
+      <div class="about-card">
+        <p style="font-size: 15px; color: var(--text);">
+          <strong>Canada Visa Apply</strong> is a dedicated visa and overseas job application guidance portal built to provide applicants with an organized, fast, and transparent experience. Every fee, tax calculation, payment instruction, and complete user detail summary is presented clearly for full confidence.
+        </p>
+
+        <div class="about-features">
+          <div class="about-item">
+            <strong>📋 Structured Application</strong>
+            Choose your job category, enter your required details, and proceed smoothly to the fee and payment steps.
+          </div>
+          <div class="about-item">
+            <strong>🧾 Clear Tax &amp; Fee Box</strong>
+            View the base selection fee, applicable processing tax, and total payable amount with a clear breakdown.
+          </div>
+          <div class="about-item">
+            <strong>📄 Complete Detail PDF</strong>
+            Download a full PDF containing all user details, page steps, tax, payment account, and proof status.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="section-header">
+        <div class="section-tag">Quick Answers</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>How do I apply for a specific job role?</span>
+            <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-a">
+            Click <strong>Apply Now</strong> on any job card, fill in your basic details, and click <strong>Start Application</strong> to proceed to the fee and payment steps.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>Where can I see the fee and tax breakdown?</span>
+            <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-a">
+            After choosing your country and payment method on the fee page and clicking <strong>Next</strong>, a dedicated <strong>Tax &amp; Fee Summary Box</strong> displays the base fee, tax, and total payable amount alongside the account details.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+            <span>How do I download the PDF with all my details?</span>
+            <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-a">
+            On the payment instructions page or the verification page, click <strong>Download Full Detail PDF</strong> to save a complete summary of your application details, page steps, fee, tax, account info, and proof status.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Canada Visa Apply. All Rights Reserved.
+  </footer>
+
+  <!-- Sample Official Report Modal -->
+  <div class="flow-backdrop" id="sampleReportModal">
+    <div class="flow-card">
+      <button class="flow-close" onclick="document.getElementById('sampleReportModal').classList.remove('open')">&times;</button>
+      <div style="font-size: 11.5px; font-weight: 800; color: var(--red); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px;">
+        Sample Official Report Preview
+      </div>
+      <h2 style="font-size: 22px; font-weight: 800; color: var(--dark); margin-bottom: 12px;">
+        🍁 Canada Visa Apply — Verification Summary
+      </h2>
+      <div class="pdf-summary-box" style="margin-top: 0; margin-bottom: 16px;">
+        <div class="pdf-summary-row"><span>Report Status:</span><strong style="color: #15803d;">✓ Result: Clear</strong></div>
+        <div class="pdf-summary-row"><span>Applicant Name:</span><strong>Sample Applicant</strong></div>
+        <div class="pdf-summary-row"><span>Selected Role:</span><strong>Security Guard ($4,500 /mo)</strong></div>
+        <div class="pdf-summary-row"><span>Identity &amp; Form Check:</span><strong>Completed &amp; Verified</strong></div>
+        <div class="pdf-summary-row"><span>Fee &amp; Tax Summary:</span><strong>Included in Full PDF</strong></div>
+      </div>
+      <button type="button" class="btn-primary" onclick="document.getElementById('sampleReportModal').classList.remove('open')">
+        Close Sample Report
+      </button>
+    </div>
+  </div>
+
+  <!-- MULTI-STEP APPLICATION & PAYMENT FLOW MODAL -->
+  <div class="flow-backdrop" id="flowModal">
+    <div class="flow-card">
+      <button class="flow-close" onclick="closeFlowModal()">&times;</button>
+
+      <div class="stepper">
+        <div class="step-pill" id="pill1"></div>
+        <div class="step-pill" id="pill2"></div>
+        <div class="step-pill" id="pill3"></div>
+        <div class="step-pill" id="pill4"></div>
+      </div>
+
+      <!-- SCREEN 1 -->
+      <div id="screen1Apply">
+        <h2 style="font-size: 23px; font-weight: 800; margin-bottom: 4px;">Apply for Visa</h2>
+        <p style="font-size: 14px; color: var(--muted); margin-bottom: 18px;">
+          You are submitting an application for: <strong id="selectedRoleLabel" style="color: var(--red);">Security Guard</strong>
+        </p>
+
+        <form id="visaAppForm">
+          <div class="form-group">
+            <div class="label-row"><label class="form-label">👤 Full Name <span class="req">*</span></label></div>
+            <input type="text" id="appFullName" class="input-field" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group">
+            <div class="label-row"><label class="form-label">✉️ Email Address <span class="req">*</span></label></div>
+            <input type="email" id="appEmail" class="input-field" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <div class="label-row"><label class="form-label">📞 Phone Number <span class="req">*</span></label></div>
+            <input type="tel" id="appPhone" class="input-field" placeholder="+91 98525 84842" required />
+          </div>
+
+          <div class="form-group">
+            <div class="label-row"><label class="form-label">📍 Location / Country <span class="req">*</span></label></div>
+            <select id="appCountry" class="select-field" required>
+              <option value="">Select your location</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <div class="label-row">
+              <label class="form-label">💼 Available Visas <span class="req">*</span></label>
+              <span class="fee-pill" id="visaFeeBadge">Visa Selection fee $194</span>
+            </div>
+            <select id="appVisaRole" class="select-field" required onchange="updateSelectedRole(this.value)"></select>
+          </div>
+
+          <div class="form-group">
+            <div class="label-row"><label class="form-label">Message / Cover Letter (Optional)</label></div>
+            <textarea id="appMessage" class="textarea-field" rows="3" placeholder="Tell us about your work experience and why you are applying..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="label-row"><label class="form-label">Upload Passport &amp; Documents (Optional)</label></div>
+            <div class="upload-box" onclick="document.getElementById('docFile').click()">
+              <div style="font-size: 26px; margin-bottom: 4px;">☁️</div>
+              <div style="font-weight: 700; font-size: 14px;" id="fileLabel">Browse Files or Drag &amp; Drop</div>
+              <div style="font-size: 12px; color: var(--muted); margin-top: 2px;">PDF, DOC, JPG, PNG (Max 5MB per file)</div>
+              <input type="file" id="docFile" hidden accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" onchange="handleFileSelect(this)" />
+            </div>
+          </div>
+
+          <div class="captcha-box">
+            <label class="captcha-left">
+              <input type="checkbox" id="robotCheck" required />
+              <span>I'm not a robot</span>
+            </label>
+            <span style="font-size: 11px; color: var(--muted); font-weight: 700;">reCAPTCHA</span>
+          </div>
+
+          <button type="submit" class="btn-primary">Start Application</button>
+        </form>
+      </div>
+
+      <!-- SCREEN 2 -->
+      <div id="screen2FeeSelect" style="display: none;">
+        <h2 class="fee-page-title">How to pay your fees</h2>
+        <p style="font-size: 14px; color: var(--text); margin-bottom: 10px;">
+          Select where you are paying from and choose your payment option, then click <strong>Next</strong>.
+        </p>
+
+        <div class="fee-widget">
+          <div class="fee-widget-header">How to pay your fees</div>
+          <div class="fee-widget-body">
+            <div class="form-group">
+              <label class="form-label" style="margin-bottom: 6px;">
+                <span class="req">*</span> Where are you paying from? <span class="req">(required)</span>
+              </label>
+              <select id="payCountrySelect" class="select-field" onchange="populateMethodsForCountry()">
+                <option value="">Select a country/territory</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" style="margin-bottom: 6px;">
+                <span class="req">*</span> What type of application / payment method? <span class="req">(required)</span>
+              </label>
+              <select id="payMethodSelect" class="select-field">
+                <option value="">Make your selection...</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn-navy" onclick="goToAccountAndTaxPage()">Next</button>
+            <button type="button" class="btn-secondary" onclick="navigateWithLoader(1, 'Returning to Form...', 'Opening application details')">← Back to Application Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCREEN 3 -->
+      <div id="screen3AccountAndProof" style="display: none;">
+        <h2 style="font-size: 22px; font-weight: 800; color: var(--dark); margin-bottom: 4px;">
+          Payment Instructions &amp; Tax Summary
+        </h2>
+        <p style="font-size: 13.5px; color: var(--muted); margin-bottom: 14px;">
+          Review your tax &amp; fee box below, send payment to the official account, attach proof, and confirm.
+        </p>
+
+        <div class="tax-box" id="taxBreakdownBox"></div>
+
+        <div class="account-card">
+          <div style="font-weight: 800; color: #15803d; font-size: 15.5px; margin-bottom: 8px;">
+            Official Receiving Account
+          </div>
+          <div id="accountDetailsContent"></div>
+
+          <form id="paymentProofForm" style="margin-top: 16px; padding-top: 14px; border-top: 1.5px dashed #86efac;">
+            <label class="form-label" style="margin-bottom: 8px;">
+              📸 Add Proof (Select Screenshot from Gallery) <span class="req">*</span>
+            </label>
+
+            <div class="upload-box" style="background: #fff; padding: 15px;" onclick="document.getElementById('proofFileInput').click()">
+              <div style="font-size: 24px;">🖼️</div>
+              <div style="font-weight: 700; font-size: 13.5px; margin-top: 4px;" id="proofFileName">Add Proof — Tap to Select Photo</div>
+              <div style="font-size: 11.5px; color: var(--muted);">JPG, PNG, WEBP</div>
+              <input type="file" id="proofFileInput" accept="image/*" hidden required onchange="previewProofImage(this)" />
+            </div>
+
+            <img id="proofPreviewImg" class="proof-preview" alt="Payment Proof Preview" />
+
+            <div style="margin-top: 14px;">
+              <button type="submit" class="btn-primary">Payment Confirm</button>
+              <button type="button" class="btn-pdf" onclick="downloadFullUserPDF()">
+                📄 Download Full Detail PDF
+              </button>
+              <button type="button" class="btn-secondary" onclick="navigateWithLoader(2, 'Loading Fee Options...', 'Going back to payment method selection')">← Change Country / Method</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- SCREEN 4 -->
+      <div id="screen4Verify" style="display: none;">
+        <div class="verify-box">
+          <div class="timer-circle" id="verifyTimerCircle">30</div>
+          <h2 id="verifyHeading" style="font-size: 21px; font-weight: 800; color: var(--dark); margin-bottom: 8px;">
+            Payment Verify...
+          </h2>
+          <p id="verifySubtext" style="font-size: 14px; color: var(--muted); max-width: 380px; margin: 0 auto 14px;">
+            Verifying your payment proof... <strong>30s</strong> remaining.
+          </p>
+
+          <div class="pdf-summary-box" id="livePdfSummaryPreview"></div>
+
+          <button type="button" class="btn-pdf" onclick="downloadFullUserPDF()">
+            📄 Download Full Detail PDF
+          </button>
+          <button type="button" class="btn-primary" style="margin-top: 10px;" onclick="closeFlowModal()">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB9Y2_hnmgQsFute7DDAcKjmuoAnggQZJY",
+      authDomain: "long-d1bcb.firebaseapp.com",
+      databaseURL: "https://long-d1bcb-default-rtdb.firebaseio.com",
+      projectId: "long-d1bcb",
+      storageBucket: "long-d1bcb.firebasestorage.app",
+      messagingSenderId: "515546162619",
+      appId: "1:515546162619:web:e046b79a25ccfa057e509e"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    const LOADER_DURATION_MS = 2500;
+
+    // Single salary value per job card
+    const jobs = [
+      { title: "Security Guard", salary: "4,500", fee: "$194", icon: "🛡️", titleRed: false, desc: "Ensure safety and security at company premises.", img: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" },
+      { title: "Food Packing", salary: "5,700", fee: "$194", icon: "📦", titleRed: true, desc: "Pack and prepare food products for distribution.", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" },
+      { title: "Cooking", salary: "4,700", fee: "$194", icon: "🍽️", titleRed: false, desc: "Prepare and cook meals according to safety standards.", img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" },
+      { title: "Driving", salary: "6,000", fee: "$194", icon: "🚚", titleRed: false, desc: "Transport goods and passengers safely to designated locations.", img: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" },
+      { title: "Cashier", salary: "4,900", fee: "$194", icon: "🧾", titleRed: false, desc: "Handle financial transactions and customer payments.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" },
+      { title: "Accounting", salary: "5,400", fee: "$194", icon: "🧮", titleRed: false, desc: "Manage financial records and transactions.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" },
+      { title: "Store Keeper", salary: "4,600", fee: "$194", icon: "🏭", titleRed: true, desc: "Manage inventory, receive shipments, and organize warehouse items.", img: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&q=80" },
+      { title: "Housekeeping", salary: "4,400", fee: "$194", icon: "🧹", titleRed: false, desc: "Perform cleaning and maintenance tasks to keep premises clean and organized.", img: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" },
+      { title: "Gardener", salary: "4,500", fee: "$194", icon: "🌱", titleRed: false, desc: "Maintain gardens, lawns, and landscapes to keep them beautiful and healthy.", img: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80" }
+    ];
+
+    const defaultIndiaAccounts = {
+      "in-gpay": {
+        id: "in-gpay",
+        country: "India",
+        method: "Google Pay (NAVI)",
+        title: "IMRAN",
+        number: "9852584842",
+        extra: "App: NAVI / Google Pay",
+        baseFee: "$194.00",
+        taxLabel: "Processing & Service Tax (5%)",
+        taxAmount: "$9.70",
+        totalPayable: "$203.70"
+      },
+      "in-phonepe": {
+        id: "in-phonepe",
+        country: "India",
+        method: "PhonePe (NAVI)",
+        title: "IMRAN",
+        number: "9852584842",
+        extra: "App: NAVI / PhonePe",
+        baseFee: "$194.00",
+        taxLabel: "Processing & Service Tax (5%)",
+        taxAmount: "$9.70",
+        totalPayable: "$203.70"
+      },
+      "in-sbi": {
+        id: "in-sbi",
+        country: "India",
+        method: "State Bank of India (Bank Transfer)",
+        title: "Allal Uddin",
+        number: "42341037496",
+        extra: "IFSC: SBIN0002050 | Branch: Dhing",
+        baseFee: "$194.00",
+        taxLabel: "Banking & Processing Tax (5%)",
+        taxAmount: "$9.70",
+        totalPayable: "$203.70"
+      }
+    };
+
+    let liveAccounts = [];
+    let currentAppKey = null;
+    let currentProofBase64 = "";
+    let currentProofFileName = "Not Uploaded";
+    let verifyCountdownInterval = null;
+    let loaderTimer = null;
+
+    let userRecord = {
+      applicationId: "",
+      name: "",
+      email: "",
+      phone: "",
+      country: "",
+      role: "Security Guard",
+      roleSalary: "$4,500 /mo",
+      message: "",
+      docName: "Not Attached",
+      paymentCountry: "",
+      paymentMethod: "Pending Selection",
+      accountHolder: "",
+      accountNumber: "",
+      accountExtra: "",
+      baseFee: "$194.00",
+      taxLabel: "Processing & Service Tax (5%)",
+      taxAmount: "$9.70",
+      totalPayable: "$203.70",
+      proofFileName: "Not Uploaded",
+      verificationStatus: "Pending Payment",
+      submittedAt: "",
+      verifiedAt: "",
+      pageHistory: []
+    };
+
+    db.ref("paymentAccounts").on("value", (snapshot) => {
+      const data = snapshot.val();
+      if (!data) {
+        db.ref("paymentAccounts").set(defaultIndiaAccounts);
+        return;
+      }
+      liveAccounts = Object.entries(data).map(([key, val]) => ({ ...val, _key: key }));
+      populateCountryDropdowns();
+    });
+
+    function openSampleReportPreview() {
+      document.getElementById("sampleReportModal").classList.add("open");
+    }
+
+    function recordPageStep(pageName) {
+      const stamp = new Date().toLocaleTimeString();
+      userRecord.pageHistory.push(`${pageName} (${stamp})`);
+    }
+
+    function run2Point5SecLoader(title, sub, callback) {
+      clearTimeout(loaderTimer);
+      document.getElementById("loaderTitle").textContent = title || "Loading Next Page...";
+      document.getElementById("loaderSub").textContent = sub || "Please wait a moment";
+      document.getElementById("pageLoader").classList.add("show");
+
+      loaderTimer = setTimeout(() => {
+        document.getElementById("pageLoader").classList.remove("show");
+        if (typeof callback === "function") callback();
+      }, LOADER_DURATION_MS);
+    }
+
+    function renderJobs(filter = "") {
+      const grid = document.getElementById("jobsGrid");
+      const q = filter.trim().toLowerCase();
+      grid.innerHTML = "";
+      jobs
+        .filter(j => j.title.toLowerCase().includes(q) || j.desc.toLowerCase().includes(q))
+        .forEach(job => {
+          const card = document.createElement("article");
+          card.className = "job-card";
+          card.innerHTML = `
+            <div class="job-media">
+              <img
+                src="${job.img}"
+                alt="${job.title}"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80';"
+              />
+              <div class="salary-badge"><span class="dollar">$</span> ${job.salary} <span class="period">/mo</span></div>
+              <div class="category-badge">${job.icon}</div>
+            </div>
+            <div class="job-body">
+              <h3 class="job-title ${job.titleRed ? "accent-red" : ""}">${job.title}</h3>
+              <p class="job-desc">${job.desc}</p>
+              <button class="btn-primary" onclick="openApplyFlow('${job.title}')">Apply Now</button>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+    }
+
+    document.getElementById("jobSearch").addEventListener("input", e => renderJobs(e.target.value));
+
+    function populateRoleDropdown() {
+      const sel = document.getElementById("appVisaRole");
+      sel.innerHTML = jobs.map(j => `<option value="${j.title}">${j.title}</option>`).join("");
+    }
+
+    function populateCountryDropdowns() {
+      const uniqueCountries = [...new Set(liveAccounts.map(a => a.country).filter(Boolean))];
+      const html = `<option value="">Select a country/territory</option>` +
+        uniqueCountries.map(c => `<option value="${c}">${c}</option>`).join("");
+
+      const prevAppC = document.getElementById("appCountry").value;
+      const prevPayC = document.getElementById("payCountrySelect").value;
+
+      document.getElementById("appCountry").innerHTML = html;
+      document.getElementById("payCountrySelect").innerHTML = html;
+
+      if (prevAppC) document.getElementById("appCountry").value = prevAppC;
+      if (prevPayC) {
+        document.getElementById("payCountrySelect").value = prevPayC;
+        populateMethodsForCountry();
+      }
+    }
+
+    function updateSelectedRole(roleName) {
+      document.getElementById("selectedRoleLabel").textContent = roleName;
+      const job = jobs.find(j => j.title === roleName);
+      document.getElementById("visaFeeBadge").textContent = `Visa Selection fee ${job ? job.fee : "$194"}`;
+      userRecord.role = roleName;
+      userRecord.roleSalary = job ? `$${job.salary} /mo` : "$4,500 /mo";
+    }
+
+    function handleFileSelect(input) {
+      const label = document.getElementById("fileLabel");
+      label.textContent = input.files && input.files[0] ? `Selected: ${input.files[0].name}` : "Browse Files or Drag & Drop";
+    }
+
+    function setScreen(num) {
+      document.getElementById("screen1Apply").style.display = num === 1 ? "block" : "none";
+      document.getElementById("screen2FeeSelect").style.display = num === 2 ? "block" : "none";
+      document.getElementById("screen3AccountAndProof").style.display = num === 3 ? "block" : "none";
+      document.getElementById("screen4Verify").style.display = num === 4 ? "block" : "none";
+
+      for (let i = 1; i <= 4; i++) {
+        const pill = document.getElementById("pill" + i);
+        pill.classList.remove("active", "done");
+        if (i < num) pill.classList.add("done");
+        else if (i === num) pill.classList.add("active");
+      }
+
+      const pageNames = {
+        1: "Page 1: Visa Application Form",
+        2: "Page 2: Fee Country & Payment Method",
+        3: "Page 3: Tax Summary, Account & Proof Upload",
+        4: "Page 4: Payment Verification & Full PDF"
+      };
+      recordPageStep(pageNames[num] || `Page ${num}`);
+      renderSummaryPreview();
+    }
+
+    function navigateWithLoader(screenNum, title, sub) {
+      run2Point5SecLoader(title, sub, () => {
+        setScreen(screenNum);
+        document.getElementById("flowModal").scrollTop = 0;
+      });
+    }
+
+    function openApplyFlow(roleTitle) {
+      clearInterval(verifyCountdownInterval);
+      run2Point5SecLoader(
+        `Preparing ${roleTitle} Application...`,
+        "Opening visa application form",
+        () => {
+          userRecord = {
+            applicationId: "CVA-" + Math.floor(100000 + Math.random() * 900000),
+            name: "",
+            email: "",
+            phone: "",
+            country: "",
+            role: roleTitle,
+            roleSalary: "",
+            message: "",
+            docName: "Not Attached",
+            paymentCountry: "",
+            paymentMethod: "Pending Selection",
+            accountHolder: "",
+            accountNumber: "",
+            accountExtra: "",
+            baseFee: "$194.00",
+            taxLabel: "Processing & Service Tax (5%)",
+            taxAmount: "$9.70",
+            totalPayable: "$203.70",
+            proofFileName: "Not Uploaded",
+            verificationStatus: "Pending Payment",
+            submittedAt: "",
+            verifiedAt: "",
+            pageHistory: []
+          };
+
+          setScreen(1);
+          document.getElementById("visaAppForm").reset();
+          document.getElementById("fileLabel").textContent = "Browse Files or Drag & Drop";
+          resetProofUploader();
+
+          document.getElementById("appVisaRole").value = roleTitle;
+          updateSelectedRole(roleTitle);
+          document.getElementById("flowModal").classList.add("open");
+          document.getElementById("flowModal").scrollTop = 0;
+        }
+      );
+    }
+
+    function closeFlowModal() {
+      clearInterval(verifyCountdownInterval);
+      document.getElementById("flowModal").classList.remove("open");
+    }
+
+    document.getElementById("visaAppForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("appFullName").value.trim();
+      const email = document.getElementById("appEmail").value.trim();
+      const phone = document.getElementById("appPhone").value.trim();
+      const country = document.getElementById("appCountry").value;
+      const role = document.getElementById("appVisaRole").value;
+      const message = document.getElementById("appMessage").value.trim();
+      const docInput = document.getElementById("docFile");
+      const docName = docInput.files && docInput.files[0] ? docInput.files[0].name : "Not Attached";
+      const jobObj = jobs.find(j => j.title === role);
+      const submittedAt = new Date().toLocaleString();
+
+      userRecord.name = name;
+      userRecord.email = email;
+      userRecord.phone = phone;
+      userRecord.country = country;
+      userRecord.role = role;
+      userRecord.roleSalary = jobObj ? `$${jobObj.salary} /mo` : "$4,500 /mo";
+      userRecord.message = message || "None";
+      userRecord.docName = docName;
+      userRecord.submittedAt = submittedAt;
+
+      const newRef = db.ref("applications").push();
+      currentAppKey = newRef.key;
+
+      newRef.set({
+        applicationId: userRecord.applicationId,
+        name,
+        email,
+        phone,
+        country,
+        role,
+        roleSalary: userRecord.roleSalary,
+        message: userRecord.message,
+        docName,
+        paymentMethod: "Pending Payment",
+        totalPayable: "",
+        proofImage: "",
+        submittedAt
+      });
+
+      run2Point5SecLoader(
+        "Opening Fee & Payment Page...",
+        "Preparing payment options for your country",
+        () => {
+          setScreen(2);
+          const payCountry = document.getElementById("payCountrySelect");
+          payCountry.value = country;
+          populateMethodsForCountry();
+          document.getElementById("flowModal").scrollTop = 0;
+        }
+      );
+    });
+
+    function populateMethodsForCountry() {
+      const selectedCountry = document.getElementById("payCountrySelect").value;
+      const methodSelect = document.getElementById("payMethodSelect");
+
+      if (!selectedCountry) {
+        methodSelect.innerHTML = `<option value="">Make your selection...</option>`;
+        return;
+      }
+
+      const matching = liveAccounts.filter(a => a.country === selectedCountry);
+      methodSelect.innerHTML =
+        `<option value="">Make your selection...</option>` +
+        matching.map(a => `<option value="${a._key}">${a.method} — ${a.title}</option>`).join("");
+    }
+
+    function goToAccountAndTaxPage() {
+      const country = document.getElementById("payCountrySelect").value;
+      const accKey = document.getElementById("payMethodSelect").value;
+
+      if (!country || !accKey) {
+        alert("Please select both a country and a payment method first.");
+        return;
+      }
+
+      const account = liveAccounts.find(a => a._key === accKey);
+      if (!account) return;
+
+      userRecord.paymentCountry = account.country;
+      userRecord.paymentMethod = account.method;
+      userRecord.accountHolder = account.title;
+      userRecord.accountNumber = account.number;
+      userRecord.accountExtra = account.extra || "";
+      userRecord.baseFee = account.baseFee || "$194.00";
+      userRecord.taxLabel = account.taxLabel || "Processing & Service Tax (5%)";
+      userRecord.taxAmount = account.taxAmount || "$9.70";
+      userRecord.totalPayable = account.totalPayable || "$203.70";
+
+      run2Point5SecLoader(
+        "Generating Payment Account & Tax Box...",
+        `Fetching details for ${account.method}`,
+        () => {
+          document.getElementById("taxBreakdownBox").innerHTML = `
+            <div class="tax-box-title">
+              <span>Tax &amp; Fee Summary Box</span>
+              <span style="color:#15803d;">VERIFIED TARIFF</span>
+            </div>
+            <div class="tax-line"><span>Visa Selection Fee:</span><strong>${userRecord.baseFee}</strong></div>
+            <div class="tax-line"><span>${userRecord.taxLabel}:</span><strong>${userRecord.taxAmount}</strong></div>
+            <div class="tax-line"><span>Total Payable Amount:</span><span>${userRecord.totalPayable}</span></div>
+          `;
+
+          document.getElementById("accountDetailsContent").innerHTML = `
+            <div class="acc-row"><span>Country:</span><strong>${account.country}</strong></div>
+            <div class="acc-row"><span>Payment Method:</span><strong>${account.method}</strong></div>
+            <div class="acc-row"><span>Account Holder Name:</span><strong>${account.title}</strong></div>
+            <div class="acc-row">
+              <span>Account / Number:</span>
+              <span>
+                <strong>${account.number}</strong>
+                <button type="button" class="copy-btn" onclick="copyText('${account.number}')">Copy</button>
+              </span>
+            </div>
+            ${account.extra ? `<div class="acc-row"><span>Additional Info:</span><strong>${account.extra}</strong></div>` : ""}
+          `;
+
+          resetProofUploader();
+          setScreen(3);
+          document.getElementById("flowModal").scrollTop = 0;
+        }
+      );
+    }
+
+    function copyText(text) {
+      navigator.clipboard.writeText(text);
+      alert("Copied: " + text);
+    }
+
+    function resetProofUploader() {
+      currentProofBase64 = "";
+      currentProofFileName = "Not Uploaded";
+      userRecord.proofFileName = "Not Uploaded";
+      document.getElementById("proofFileInput").value = "";
+      document.getElementById("proofFileName").textContent = "Add Proof — Tap to Select Photo";
+      const img = document.getElementById("proofPreviewImg");
+      img.src = "";
+      img.style.display = "none";
+    }
+
+    function previewProofImage(input) {
+      const file = input.files && input.files[0];
+      if (!file) return;
+
+      currentProofFileName = file.name;
+      userRecord.proofFileName = file.name;
+      document.getElementById("proofFileName").textContent = `Selected: ${file.name}`;
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const tempImg = new Image();
+        tempImg.onload = function() {
+          const canvas = document.createElement("canvas");
+          const maxWidth = 650;
+          const scale = tempImg.width > maxWidth ? maxWidth / tempImg.width : 1;
+          canvas.width = tempImg.width * scale;
+          canvas.height = tempImg.height * scale;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(tempImg, 0, 0, canvas.width, canvas.height);
+
+          currentProofBase64 = canvas.toDataURL("image/jpeg", 0.72);
+          const preview = document.getElementById("proofPreviewImg");
+          preview.src = currentProofBase64;
+          preview.style.display = "block";
+          renderSummaryPreview();
+        };
+        tempImg.src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    document.getElementById("paymentProofForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      if (!currentProofBase64) {
+        alert("Please select your payment proof photo first.");
+        return;
+      }
+
+      const accKey = document.getElementById("payMethodSelect").value;
+      const account = liveAccounts.find(a => a._key === accKey);
+      const methodSummary = account
+        ? `${account.country} — ${account.method} (${account.title}: ${account.number})`
+        : "Selected Method";
+
+      userRecord.verificationStatus = "Verifying Proof (30s Countdown)";
+      userRecord.verifiedAt = new Date().toLocaleString();
+
+      if (currentAppKey) {
+        db.ref("applications/" + currentAppKey).update({
+          paymentMethod: methodSummary,
+          totalPayable: account ? account.totalPayable : userRecord.totalPayable,
+          proofImage: currentProofBase64,
+          proofFileName: currentProofFileName,
+          verifiedAt: userRecord.verifiedAt
+        });
+      }
+
+      run2Point5SecLoader(
+        "Confirming Payment Proof...",
+        "Starting 30-second payment verification",
+        () => {
+          start30SecondVerify();
+          document.getElementById("flowModal").scrollTop = 0;
+        }
+      );
+    });
+
+    function start30SecondVerify() {
+      clearInterval(verifyCountdownInterval);
+      setScreen(4);
+
+      let secondsLeft = 30;
+      const circle = document.getElementById("verifyTimerCircle");
+      const heading = document.getElementById("verifyHeading");
+      const subtext = document.getElementById("verifySubtext");
+
+      circle.classList.remove("verified");
+      circle.textContent = secondsLeft;
+      heading.textContent = "Payment Verify...";
+      subtext.innerHTML = `Verifying your payment proof... <strong>${secondsLeft}s</strong> remaining.`;
+
+      verifyCountdownInterval = setInterval(() => {
+        secondsLeft -= 1;
+        if (secondsLeft > 0) {
+          circle.textContent = secondsLeft;
+          subtext.innerHTML = `Verifying your payment proof... <strong>${secondsLeft}s</strong> remaining.`;
+        } else {
+          clearInterval(verifyCountdownInterval);
+          circle.classList.add("verified");
+          circle.textContent = "✓";
+          heading.textContent = "Payment Verify Complete";
+          subtext.textContent = "Your payment proof has been received and verification is complete. You can now download your Full Detail PDF.";
+          userRecord.verificationStatus = "Verified Complete";
+          userRecord.verifiedAt = new Date().toLocaleString();
+          renderSummaryPreview();
+        }
+      }, 1000);
+    }
+
+    function renderSummaryPreview() {
+      const box = document.getElementById("livePdfSummaryPreview");
+      if (!box) return;
+      box.innerHTML = `
+        <div style="font-weight:800; color:#0f172a; margin-bottom:6px;">Full Detail PDF Snapshot (${userRecord.applicationId || "PENDING"})</div>
+        <div class="pdf-summary-row"><span>Applicant Name:</span><strong>${userRecord.name || "-"}</strong></div>
+        <div class="pdf-summary-row"><span>Selected Role &amp; Salary:</span><strong>${userRecord.role} (${userRecord.roleSalary || "$4,500 /mo"})</strong></div>
+        <div class="pdf-summary-row"><span>Payment Method:</span><strong>${userRecord.paymentMethod || "Pending"}</strong></div>
+        <div class="pdf-summary-row"><span>Total Payable (with Tax):</span><strong>${userRecord.totalPayable}</strong></div>
+        <div class="pdf-summary-row"><span>Proof File:</span><strong>${userRecord.proofFileName}</strong></div>
+        <div class="pdf-summary-row"><span>Verification Status:</span><strong>${userRecord.verificationStatus}</strong></div>
+      `;
+    }
+
+    function escapeHtml(str) {
+      return String(str || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function downloadFullUserPDF() {
+      const stepsHtml = (userRecord.pageHistory || [])
+        .map(s => `<li>${escapeHtml(s)}</li>`)
+        .join("") || "<li>Application Flow Started</li>";
+
+      const proofImgHtml = currentProofBase64
+        ? `<div style="margin-top:12px;"><strong>Uploaded Payment Proof Preview:</strong><br/><img src="${currentProofBase64}" style="max-width:340px;max-height:240px;border:1px solid #cbd5e1;border-radius:8px;margin-top:6px;" /></div>`
+        : `<p style="margin-top:10px;color:#64748b;"><strong>Payment Proof Image:</strong> Not attached yet</p>`;
+
+      const pdfReportHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Complete Application &amp; Payment PDF — ${escapeHtml(userRecord.applicationId || "User")}</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #111827; padding: 28px; line-height: 1.5; }
+    .header { border-bottom: 3px solid #c81e2b; padding-bottom: 12px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-size: 22px; font-weight: 800; color: #c81e2b; }
+    .sub { font-size: 12px; color: #4b5563; }
+    h2 { font-size: 15px; background: #f3f4f6; padding: 8px 12px; border-left: 4px solid #c81e2b; margin: 18px 0 10px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
+    td { border: 1px solid #e5e7eb; padding: 8px 10px; font-size: 13px; vertical-align: top; }
+    td:first-child { width: 34%; font-weight: 700; background: #fafafa; }
+    ul { margin: 6px 0 12px 20px; font-size: 13px; }
+    .total-row td { font-weight: 800; color: #c81e2b; background: #fff5f5; }
+    @media print { body { padding: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="brand">CANADA VISA APPLY</div>
+      <div class="sub">Complete Applicant, Page Flow, Tax &amp; Payment Record</div>
+    </div>
+    <div style="text-align:right; font-size:12px;">
+      <div><strong>Record ID:</strong> ${escapeHtml(userRecord.applicationId || "CVA-RECORD")}</div>
+      <div><strong>Generated:</strong> ${escapeHtml(new Date().toLocaleString())}</div>
+    </div>
+  </div>
+
+  <h2>1. Applicant &amp; Job Selection Details</h2>
+  <table>
+    <tr><td>Full Name</td><td>${escapeHtml(userRecord.name || "Not Provided")}</td></tr>
+    <tr><td>Email Address</td><td>${escapeHtml(userRecord.email || "Not Provided")}</td></tr>
+    <tr><td>Phone Number</td><td>${escapeHtml(userRecord.phone || "Not Provided")}</td></tr>
+    <tr><td>Applicant Location / Country</td><td>${escapeHtml(userRecord.country || "Not Selected")}</td></tr>
+    <tr><td>Selected Visa / Job Role</td><td>${escapeHtml(userRecord.role || "Not Selected")}</td></tr>
+    <tr><td>Monthly Salary</td><td>${escapeHtml(userRecord.roleSalary || "$4,500 /mo")}</td></tr>
+    <tr><td>Message / Cover Letter</td><td>${escapeHtml(userRecord.message || "None")}</td></tr>
+    <tr><td>Attached Documents</td><td>${escapeHtml(userRecord.docName || "Not Attached")}</td></tr>
+    <tr><td>Application Submitted At</td><td>${escapeHtml(userRecord.submittedAt || "Pending Submission")}</td></tr>
+  </table>
+
+  <h2>2. Fee, Tax &amp; Official Payment Account Details</h2>
+  <table>
+    <tr><td>Paying From Country</td><td>${escapeHtml(userRecord.paymentCountry || userRecord.country || "Not Selected")}</td></tr>
+    <tr><td>Selected Payment Method</td><td>${escapeHtml(userRecord.paymentMethod || "Pending Selection")}</td></tr>
+    <tr><td>Account Holder Name</td><td>${escapeHtml(userRecord.accountHolder || "Pending Selection")}</td></tr>
+    <tr><td>Account / Number</td><td>${escapeHtml(userRecord.accountNumber || "Pending Selection")}</td></tr>
+    <tr><td>Additional Account Info</td><td>${escapeHtml(userRecord.accountExtra || "-")}</td></tr>
+    <tr><td>Base Visa Selection Fee</td><td>${escapeHtml(userRecord.baseFee)}</td></tr>
+    <tr><td>${escapeHtml(userRecord.taxLabel)}</td><td>${escapeHtml(userRecord.taxAmount)}</td></tr>
+    <tr class="total-row"><td>Total Payable Amount</td><td>${escapeHtml(userRecord.totalPayable)}</td></tr>
+  </table>
+
+  <h2>3. Payment Proof &amp; Verification Status</h2>
+  <table>
+    <tr><td>Proof File Name</td><td>${escapeHtml(userRecord.proofFileName)}</td></tr>
+    <tr><td>Verification Status</td><td>${escapeHtml(userRecord.verificationStatus)}</td></tr>
+    <tr><td>Verification Timestamp</td><td>${escapeHtml(userRecord.verifiedAt || "Pending")}</td></tr>
+  </table>
+  ${proofImgHtml}
+
+  <h2>4. Page Navigation &amp; Step History</h2>
+  <ul>${stepsHtml}</ul>
+
+  <script>
+    window.onload = function() {
+      setTimeout(function() { window.print(); }, 250);
+    };
+  <\/script>
+</body>
+</html>`;
+
+      const pdfWin = window.open("", "_blank", "width=820,height=900");
+      if (!pdfWin) {
+        alert("Please allow pop-ups in your browser to download/save your PDF.");
+        return;
+      }
+      pdfWin.document.open();
+      pdfWin.document.write(pdfReportHtml);
+      pdfWin.document.close();
+    }
+
+    renderJobs();
+    populateRoleDropdown();
+  </script>
+</body>
+</html>
